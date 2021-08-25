@@ -1,0 +1,57 @@
+.container-review {
+    text-align: center;
+    padding: 2rem 9%;
+
+    .review-box {
+        box-shadow: 0 0.5px 1px 1px rgba(0, 0, 0, 0.09);
+
+        padding: 2rem;
+        margin: 0.1rem;
+        margin-top: 2rem;
+        // margin-bottom : 2rem ;
+        .review-header {
+            display: flex;
+            align-items: center;
+            position: relative;
+
+            .review-avatar {
+                img {
+                    border-radius: 50%;
+                    width: 7rem;
+                    height: 7rem;
+                    // object-fit: cover;
+                }
+            }
+            .icon-quote {
+                font-size: 6rem;
+                position: absolute;
+                color: #ccc;
+                right: 0;
+            }
+            .review-name {
+                padding-left: 2rem;
+                p {
+                    margin: 0 0 1rem 0;
+                    font-size: 2rem;
+                    color: $blue-color;
+                    font-weight: 700;
+                }
+                .review-start {
+                    i {
+                        font-size: 1.5rem;
+                        color: $green-color;
+                    }
+                }
+            }
+        }
+        .review-comment {
+            text-align: left;
+            p {
+                // margin : 0 ;
+                line-height: 2.5rem;
+                font-size: 1.5rem;
+                color: $text-color;
+            }
+        }
+    }
+}

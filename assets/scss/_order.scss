@@ -1,0 +1,53 @@
+.container-order {
+    padding: 2rem 9%;
+    text-align: center;
+    background-color: $bgc-prime;
+    .form-container {
+        text-align: left;
+        .form {
+            margin-top: 2rem;
+            max-width: 90rem;
+            margin: 0 auto;
+            font-size: 1.6rem;
+            color: $text-color;
+            background-color: $white-color;
+            padding: 2rem 1rem;
+            border-radius: 5px;
+            box-shadow: 0 0.5px 1px 1px rgba(0, 0, 0, 0.09);
+
+            .btn-order {
+                // padding-left : 0.8rem ;
+                margin-left: 0.8rem;
+            }
+            &-info,
+            &-number {
+                input,
+                textarea {
+                    width: 100%;
+                    padding: 1rem 1rem;
+                    background-color: $bgc-prime;
+                    border-radius: 5px;
+                    margin: 1rem 0 1.5rem;
+                    outline: none;
+                    border: none;
+                    // resize: none;
+                    &:focus {
+                        border: 1px solid $green-color;
+                    }
+                }
+                textarea {
+                    resize: none;
+                }
+                input[type='datetime-local'] {
+                    padding: 0.79rem 1rem;
+                    min-width: 95%;
+                    display: block;
+                    -webkit-appearance: textfield;
+                    -moz-appearance: textfield;
+                    min-height: 3.8rem;
+                   
+                }
+            }
+        }
+    }
+}

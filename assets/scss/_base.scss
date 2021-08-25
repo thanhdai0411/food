@@ -1,0 +1,57 @@
+$blue-color: #192a56;
+$text-color: #666;
+$green-color: #27ae60;
+$white-color: white;
+$black-color: black;
+$bgc-prime: #eeeeee;
+
+* {
+    box-sizing: inherit;
+    text-decoration: none;
+    list-style: none;
+    transition: all 0.2s linear;
+}
+html {
+    box-sizing: border-box;
+    line-height: 1.6rem;
+    overflow-x: hidden;
+    font-size: 62.5%;
+    font-family: 'Nunito', sans-serif;
+    scroll-behavior: smooth;
+}
+// add event
+.open {
+    display: block !important;
+}
+.open-clip-path {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%) !important; // hinh vuong
+}
+.btn-primary {
+    border: none;
+    outline: none;
+    font-size: 1.7rem;
+    padding: 1.2rem 3.5rem;
+    background-color: $blue-color;
+    color: $white-color;
+    border-radius: 5px;
+    &:hover {
+        background-color: $green-color;
+        cursor: pointer;
+        letter-spacing: 1px;
+    }
+}
+
+.title-header {
+    h4 {
+        color: $green-color;
+        font-size: 2rem;
+        margin-top: 1.5rem;
+        margin-bottom: 0;
+    }
+    h2 {
+        color: $blue-color;
+        font-size: 3rem;
+        margin-top: 1rem;
+        margin-bottom: 0.8rem;
+    }
+}

@@ -1,0 +1,467 @@
+// mobi
+@media (max-width: 739px) {
+    .header {
+        padding: 0 20px;
+
+        .navbar {
+            z-index: 100;
+            clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+
+            padding: 2rem;
+            position: absolute;
+            top: 100%;
+            right: 0;
+            left: 0;
+            background-color: $white-color;
+            box-shadow: 0 0.05px 1px 1px rgba(0, 0, 0, 0.1);
+
+            .navbar__links {
+                display: block;
+                padding: 1.8rem 1.5rem;
+                margin: 1rem 0;
+                background-color: $bgc-prime;
+                border-radius: 5px;
+            }
+        }
+        &__icon {
+            .header__search {
+                .search-input {
+                    padding: 0 100px;
+                }
+            }
+        }
+    }
+    //slider
+    .container-slider {
+        padding-top: 100px;
+        padding-bottom: 20px;
+        padding: 2rem;
+
+        .slider {
+            display: block;
+
+            .slider__content {
+                h4 {
+                    font-size: 2.2rem;
+                }
+                h1 {
+                    font-size: 4rem;
+                }
+                p {
+                    margin: 2rem 0 2rem;
+                    font-size: 1.7rem;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 2;
+                    -webkit-box-orient: vertical;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+                button {
+                    font-size: 1.5rem;
+                    padding: 1.2rem 2rem;
+                    margin-bottom: 3rem;
+                }
+            }
+            .slider__img {
+                flex: 1;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+        .swiper-pagination-bullet {
+            background-color: $green-color;
+            width: 10px;
+            height: 10px;
+        }
+        .swiper-pagination {
+            position: unset !important ;
+        }
+    }
+
+    // card
+    .container-dish {
+        padding: 2rem 1.5rem;
+        .dish-box {
+            .dish-img {
+                flex: 1;
+                img {
+                    padding: 1rem 0;
+                    height: 100%;
+                    max-height: 300px;
+                    min-height: 100px;
+                    width: 100%;
+                }
+            }
+
+            .dish-prime {
+                span {
+                    color: $green-color;
+                    font-weight: 700;
+                }
+                .btn {
+                    padding: 1.2rem 3rem;
+                    margin-left: 1rem;
+                }
+            }
+        }
+    }
+    // about
+    .container-about {
+        padding: 2rem 2rem;
+        text-align: center;
+        .about-container {
+            display: block;
+            align-items: center;
+            .about-img {
+                margin-top: 2rem;
+            }
+
+            .about-content {
+                flex: 1;
+                text-align: justify;
+            }
+            .about-btn {
+                .box-btn {
+                    display: flex;
+                    flex-wrap: wrap;
+                    button {
+                        padding: 1.3rem 0;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        font-size: 1.5rem;
+                        border-radius: 5px;
+                        border: 1px solid rgba(0, 0, 0, 0.15);
+                        i {
+                            padding-right: 1rem;
+                            font-size: 2rem;
+                            color: $green-color;
+                        }
+                    }
+                    .box-btn-1 {
+                        padding-right: 0.5rem;
+                        .btn-1 {
+                            width: 100%;
+                        }
+                    }
+                    .box-btn-2 {
+                        padding-left: 0.5rem;
+
+                        .btn-2 {
+                            width: 100%;
+                        }
+                    }
+                    .btn-3 {
+                        margin-top: 1rem;
+
+                        width: 100%;
+                        // padding : 0 8px ;
+                    }
+                }
+            }
+        }
+    }
+    //menu
+    .container-menu {
+        .menu-box {
+            padding: 1.5rem;
+
+            text-align: left;
+
+            .menu-icon {
+                position: absolute;
+                background-color: $white-color;
+                border-radius: 50%;
+                width: 5rem;
+                height: 5rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                right: 2.5rem;
+                top: 2.5rem;
+                // margin : 2.5rem 2.5rem 0 0 ;
+            }
+            .menu-img {
+                img {
+                    border-radius: 5px;
+                    width: 100%;
+                    padding: 0;
+                }
+            }
+        }
+    }
+    //review
+    .container-review {
+        text-align: center;
+        padding: 2rem 9%;
+        .review-box {
+            // width : 100% ;
+            .review-header {
+                .review-avatar {
+                    img {
+                        border-radius: 50%;
+                        width: 6rem;
+                        height: 6rem;
+                        // object-fit: cover;
+                    }
+                }
+                .icon-quote {
+                    font-size: 5rem;
+                    position: absolute;
+                    color: #ccc;
+                    right: 0;
+                }
+                .review-name {
+                    padding-left: 2rem;
+                    p {
+                        margin: 0 0 1rem 0;
+                        font-size: 1.8rem;
+                        color: $blue-color;
+                        font-weight: 700;
+                    }
+                    .review-start {
+                        i {
+                            font-size: 1.5rem;
+                            color: $green-color;
+                        }
+                    }
+                }
+            }
+            .review-comment {
+                text-align: left;
+                p {
+                    // margin : 0 ;
+                    line-height: 2.5rem;
+                    font-size: 1.5rem;
+                    color: $text-color;
+                }
+            }
+        }
+    }
+
+    //order
+    .container-order {
+        padding: 2rem 2rem;
+        .form-container {
+            .form {
+                &-number {
+                    input[type='datetime-local'] {
+                        padding: 0.79rem 1rem;
+                        min-width: 95%;
+                        display: block;
+                        -webkit-appearance: textfield;
+                        -moz-appearance: textfield;
+                        min-height: 4.3rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// table
+@media (min-width: 740px) and (max-width: 1024px) {
+    .header {
+        padding: 0 20px;
+
+        .navbar {
+            z-index: 100;
+            clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+
+            padding: 2rem;
+            position: absolute;
+            top: 100%;
+            right: 0;
+            left: 0;
+            background-color: $white-color;
+            box-shadow: 0 0.05px 1px 1px rgba(0, 0, 0, 0.1);
+            .navbar__links {
+                display: block;
+                padding: 1.8rem 1.5rem;
+                margin: 1rem 0;
+                background-color: $bgc-prime;
+                border-radius: 5px;
+            }
+        }
+        &__icon {
+            .header__search {
+                .search-input {
+                    padding: 0 100px;
+                }
+            }
+        }
+    }
+    // slider
+    .container-slider {
+        padding-top: 105px;
+        padding-bottom: 20px;
+        padding: 2.5rem;
+
+        .slider {
+            display: block;
+
+            .slider__content {
+                h4 {
+                    font-size: 2.2rem;
+                }
+                h1 {
+                    font-size: 4rem;
+                }
+                p {
+                    font-size: 2rem;
+                }
+            }
+            .slider__img {
+                width: 100%;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+
+        .swiper-pagination-bullet {
+            background-color: $green-color;
+            width: 10px;
+            height: 10px;
+        }
+        .swiper-pagination {
+            position: unset !important ;
+        }
+    }
+
+    // card
+    .container-dish {
+        padding: 2rem 2rem;
+    }
+
+    // about
+    .container-about {
+        padding: 2rem 2rem;
+        text-align: center;
+        .about-container {
+            display: block;
+            align-items: center;
+            .about-img {
+                margin-top: 2rem;
+            }
+
+            .about-content {
+                flex: 1;
+                text-align: justify;
+            }
+            .about-btn {
+                .box-btn {
+                    display: flex;
+
+                    button {
+                        flex: 1;
+                        margin-right: 1rem;
+                        padding: 1.3rem 0;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        font-size: 1.5rem;
+                        border-radius: 5px;
+                        border: 1px solid rgba(0, 0, 0, 0.15);
+                        i {
+                            padding-right: 1rem;
+                            font-size: 2rem;
+                        }
+                    }
+                    .box-btn-1 {
+                        padding-right: 0.75rem;
+                        .btn-1 {
+                            width: 100%;
+                        }
+                    }
+                    .box-btn-2 {
+                        padding-left: 0.75rem;
+
+                        .btn-2 {
+                            width: 100%;
+                        }
+                    }
+                    .box-btn-3 {
+                        padding-left: 1.5rem;
+
+                        .btn-3 {
+                            margin: 0;
+                            width: 100%;
+                            // padding : 0 8px ;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    //review
+    .container-review {
+        text-align: center;
+        padding: 2rem 9%;
+        .review-box {
+            // width : 100% ;
+            .review-header {
+                .review-avatar {
+                    img {
+                        border-radius: 50%;
+                        width: 5rem;
+                        height: 5rem;
+                        // object-fit: cover;
+                    }
+                }
+                .icon-quote {
+                    font-size: 4rem;
+                    position: absolute;
+                    color: #ccc;
+                    right: 0;
+                }
+                .review-name {
+                    padding-left: 2rem;
+                    p {
+                        margin: 0 0 1rem 0;
+                        font-size: 1.6rem;
+                        color: $blue-color;
+                        font-weight: 700;
+                    }
+                    .review-start {
+                        i {
+                            font-size: 1.5rem;
+                            color: $green-color;
+                        }
+                    }
+                }
+            }
+            .review-comment {
+                text-align: left;
+                p {
+                    // margin : 0 ;
+                    line-height: 2.5rem;
+                    font-size: 1.5rem;
+                    color: $text-color;
+                }
+            }
+        }
+    }
+    // order
+    .container-order {
+        padding: 2rem 2rem;
+    }
+}
+
+// pc
+@media (min-width: 1024px) {
+    .header {
+        &__icon {
+            .open-bar-mobi {
+                display: none;
+            }
+        }
+    }
+}
